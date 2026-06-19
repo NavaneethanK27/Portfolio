@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navaneethan K | Portfolio</title>
+  <meta name="description" content="Portfolio of Navaneethan K, a Computer Science Engineering student and developer specializing in React.js, Java, and AI integration.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-accent">N</span>K
+      </a>
+      <nav class="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link contact-btn-nav">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">
+          <!-- Sun Icon (visible in Dark Mode) -->
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <!-- Moon Icon (visible in Light Mode) -->
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <svg class="menu-open-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg class="menu-close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer">
+    <nav class="mobile-nav-menu">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#certifications" class="mobile-nav-link">Certifications</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content fade-in-up">
+          <span class="hero-greeting">Hi, my name is</span>
+          <h1 class="hero-name">Navaneethan K</h1>
+          <h2 class="hero-title">I'm a <span id="typed-text"></span><span class="typed-cursor">|</span></h2>
+          <p class="hero-description">
+            A passionate Computer Science Engineering student and developer interested in IT roles, with knowledge of programming, data structures, and problem-solving. Eager to learn, contribute to innovative projects, and grow in a challenging IT environment.
+          </p>
+          
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="mailto:navaneethankdev@gmail.com" class="social-link link-email" title="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                <path fill="#EA4335" d="M45 16.2V38c0 2.2-1.8 4-4 4H31V18z"/>
+                <path fill="#4285F4" d="M3 16.2V38c0 2.2 1.8 4 4 4h10V18z"/>
+                <path fill="#FBBC05" d="M31 18V6c0-2.2-1.8-4-4-4h-6c-2.2 0-4 1.8-4 4v12z"/>
+                <path fill="#34A853" d="M17 18h14v10H17z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/918668125458" target="_blank" rel="noopener noreferrer" class="social-link link-whatsapp" title="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="12" fill="#25D366"/>
+                <path fill="#FFF" d="M12.008 3.5c-4.68 0-8.5 3.82-8.5 8.5 0 1.5.39 2.96 1.14 4.25L3.5 20.5l4.37-1.14c1.24.68 2.63 1.04 4.09 1.04 4.69 0 8.5-3.82 8.5-8.5s-3.81-8.4-8.45-8.4zm4.49 11.23c-.19.53-1.09 1.01-1.52 1.05-.39.04-.89.06-2.52-.61-2.09-.85-3.43-2.98-3.53-3.12-.1-.14-.81-1.07-.81-2.05s.51-1.46.69-1.65c.18-.19.4-.24.53-.24s.27.01.39.02c.12.01.29-.05.45.34.17.41.59 1.45.64 1.56.05.11.09.24.01.4-.08.16-.17.26-.26.37-.1.11-.21.24-.3.35-.11.12-.22.25-.1.46.12.21.52.86 1.12 1.4 1.09.97 1.89 1.25 2.16 1.36.27.11.43.09.59-.09.16-.18.69-.8 1.05-1.21.11-.12.23-.15.39-.09.16.06 1.02.48 1.2.57.18.09.3.13.34.21.04.08.04.47-.15 1z"/>
+              </svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link link-github" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="12" fill="#181717" class="github-bg"/>
+                <path fill="#FFF" d="M12 5c-3.87 0-7 3.13-7 7 0 3.09 2 5.72 4.78 6.65.35.06.48-.15.48-.34 0-.17-.01-.62-.01-1.21-1.95.42-2.36-.94-2.36-.94-.32-.81-.78-1.03-.78-1.03-.64-.44.05-.43.05-.43.7.05 1.08.73 1.08.73.63 1.08 1.65.77 2.05.59.06-.46.25-.77.45-.95-1.55-.18-3.18-.78-3.18-3.46 0-.76.27-1.39.72-1.88-.07-.18-.31-.89.07-1.85 0 0 .59-.19 1.93.72a6.7 6.7 0 0 1 3.5 0c1.34-.91 1.93-.72 1.93-.72.38.96.14 1.67.07 1.85.45.49.72 1.12.72 1.88 0 2.69-1.63 3.28-3.19 3.45.25.22.48.65.48 1.32 0 .95-.01 1.72-.01 1.95 0 .19.13.41.49.34C17 17.72 19 15.09 19 12c0-3.87-3.13-7-7-7z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/navaneethan-k-r24/" target="_blank" rel="noopener noreferrer" class="social-link link-linkedin" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+                <path fill="#FFF" d="M7.5 5.5A1.5 1.5 0 1 1 6 7a1.5 1.5 0 0 1 7.5-1.5zM6 9h3v10H6zm4.5 0h2.9v1.4a3.3 3.3 0 0 1 2.8-1.6c3.1 0 3.7 2 3.7 4.7v5.5H17v-5.2c0-1.2 0-2.8-1.7-2.8-1.7 0-2 1.3-2 2.7v5.3h-2.9z"/>
+              </svg>
+            </a>
+            <a href="https://leetcode.com/u/NAVANEETHAN_1027/" target="_blank" rel="noopener noreferrer" class="social-link link-leetcode" title="LeetCode">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <path d="M16.102 17.93l-2.69 2.6c-.752.697-1.895.697-2.647 0l-5.36-5.18a1.724 1.724 0 0 1 0-2.55l5.36-5.18c.752-.697 1.895-.697 2.647 0l2.69 2.6c.75.698.75 1.83 0 2.53l-2.3 2.22a.434.434 0 0 0 0 .63l2.3 2.22c.75.697.75 1.83 0 2.53z" fill="#FFA116"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          
+          <div class="about-card scroll-reveal">
+            <h3>My Journey</h3>
+            <p>
+              I am a Computer Science Engineering student based in Coimbatore, India. I focus on software development, building clean frontend interfaces, and implementing backend systems. I am highly motivated by problem-solving and logic, which drives me to continuously learn and adopt new frameworks and technologies.
+            </p>
+            <div class="stats-row">
+              <div class="stat-box">
+                <span class="stat-num">8.13</span>
+                <span class="stat-lbl">B.E. CGPA</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">2+</span>
+                <span class="stat-lbl">Core Projects</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">100%</span>
+                <span class="stat-lbl">Eager to Learn</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card education-card scroll-reveal">
+            <h3>Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <h4>Bachelor of Engineering</h4>
+                  <span class="timeline-date">2023 - Present</span>
+                </div>
+                <p class="timeline-sub">Computer Science and Engineering</p>
+                <p class="timeline-institution">Rathinam Technical Campus | Coimbatore, India</p>
+                <div class="grade-badge">CGPA: 8.13</div>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <h4>Higher Secondary Education</h4>
+                  <span class="timeline-date">2022 - 2023</span>
+                </div>
+                <p class="timeline-sub">Science & Mathematics stream</p>
+                <p class="timeline-institution">K.Kamarajar Matriculation Higher Secondary School | Virudhunagar, India</p>
+                <div class="grade-badge">Percentage: 83%</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section section-alt">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          
+          <!-- Category 1 -->
+          <div class="skills-category-card scroll-reveal">
+            <div class="skills-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Languages & Web Tech</h3>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-name-row">
+                  <span>Java</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-row">
+                  <span>React.js</span>
+                  <span class="skill-percent">Advanced</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-row">
+                  <span>JavaScript</span>
+                  <span class="skill-percent">Advanced</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-row">
+                  <span>HTML5 & CSS3</span>
+                  <span class="skill-percent">Advanced</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-row">
+                  <span>SQL</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skills-category-card scroll-reveal">
+            <div class="skills-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M21 9H3"/><path d="M21 15H3"/><path d="M12 3v18"/></svg>
+            </div>
+            <h3>Tools & Platforms</h3>
+            <div class="tags-container">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">IntelliJ IDEA</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Node.js</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skills-category-card scroll-reveal">
+            <div class="skills-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Soft Skills</h3>
+            <div class="tags-container">
+              <span class="skill-tag tag-soft">Leadership</span>
+              <span class="skill-tag tag-soft">Teamwork & Collaboration</span>
+              <span class="skill-tag tag-soft">Decision Making</span>
+              <span class="skill-tag tag-soft">Problem Solving</span>
+              <span class="skill-tag tag-soft">Fast Learner</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          
+          <!-- Project 1: Crackers E-Commerce -->
+          <article class="project-card scroll-reveal">
+            <div class="project-header">
+              <div class="project-folder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/NavaneethanK27/crackers-ecommerce-react" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Crackers E-Commerce Website</h3>
+            <p class="project-desc">
+              A responsive online shopping platform tailored for buying fireworks and seasonal items. Designed with a smooth checkout path and intuitive item navigation.
+            </p>
+            <ul class="project-features">
+              <li>Dynamic product listing with categories & filter capabilities</li>
+              <li>Fully functional interactive shopping cart with add, remove, & quantity controls</li>
+              <li>Robust state management utilizing React Hooks (useState, useEffect)</li>
+              <li>Modular component-based UI designed for responsiveness and visual clarity</li>
+            </ul>
+            <div class="project-tech">
+              <span>React.js</span>
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+          </article>
+
+          <!-- Project 2: StudyFlow AI -->
+          <article class="project-card scroll-reveal">
+            <div class="project-header">
+              <div class="project-folder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div class="project-links">
+                <span class="hackathon-badge">Hackathon Project</span>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">StudyFlow AI</h3>
+            <p class="project-desc">
+              An AI-powered student productivity companion developed during a coding hackathon to tackle student burnout and optimize learning cycles.
+            </p>
+            <ul class="project-features">
+              <li>Integrated Google Gemini API to build a customized study chatbot</li>
+              <li>Dynamic personalized study schedules and comprehensive burnout warning logs</li>
+              <li>Interactive quiz generation module based on custom study topics</li>
+              <li>Frontend-to-backend REST API integration for real-time AI responses</li>
+            </ul>
+            <div class="project-tech">
+              <span>React.js</span>
+              <span>Gemini API</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section section-alt">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-grid">
+          
+          <!-- Cert 1 -->
+          <div class="cert-card scroll-reveal">
+            <div class="cert-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2EC866" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h3v18H6M18 3h-3v18h3M9 12h6"/>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <h3>JavaScript Certificate</h3>
+              <p class="cert-issuer">Issued by HackerRank</p>
+            </div>
+            <a href="https://hackerrank.com" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+              Verify
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" x2="17" y1="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card scroll-reveal">
+            <div class="cert-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2EC866" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h3v18H6M18 3h-3v18h3M9 12h6"/>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <h3>SQL Certificate</h3>
+              <p class="cert-issuer">Issued by HackerRank</p>
+            </div>
+            <a href="https://hackerrank.com" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+              Verify
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" x2="17" y1="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+          
+          <div class="contact-info-card scroll-reveal">
+            <h3>Let's build something together!</h3>
+            <p>
+              I am open to internships, developer roles, and collaborations. Feel free to contact me using the form or reach out directly through my social channels.
+            </p>
+            
+            <div class="contact-details">
+              <div class="detail-item">
+                <div class="detail-icon icon-email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                    <path fill="#EA4335" d="M45 16.2V38c0 2.2-1.8 4-4 4H31V18z"/>
+                    <path fill="#4285F4" d="M3 16.2V38c0 2.2 1.8 4 4 4h10V18z"/>
+                    <path fill="#FBBC05" d="M31 18V6c0-2.2-1.8-4-4-4h-6c-2.2 0-4 1.8-4 4v12z"/>
+                    <path fill="#34A853" d="M17 18h14v10H17z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:navaneethankdev@gmail.com">navaneethankdev@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon icon-whatsapp">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="12" fill="#25D366"/>
+                    <path fill="#FFF" d="M12.008 3.5c-4.68 0-8.5 3.82-8.5 8.5 0 1.5.39 2.96 1.14 4.25L3.5 20.5l4.37-1.14c1.24.68 2.63 1.04 4.09 1.04 4.69 0 8.5-3.82 8.5-8.5s-3.81-8.4-8.45-8.4zm4.49 11.23c-.19.53-1.09 1.01-1.52 1.05-.39.04-.89.06-2.52-.61-2.09-.85-3.43-2.98-3.53-3.12-.1-.14-.81-1.07-.81-2.05s.51-1.46.69-1.65c.18-.19.4-.24.53-.24s.27.01.39.02c.12.01.29-.05.45.34.17.41.59 1.45.64 1.56.05.11.09.24.01.4-.08.16-.17.26-.26.37-.1.11-.21.24-.3.35-.11.12-.22.25-.1.46.12.21.52.86 1.12 1.4 1.09.97 1.89 1.25 2.16 1.36.27.11.43.09.59-.09.16-.18.69-.8 1.05-1.21.11-.12.23-.15.39-.09.16.06 1.02.48 1.2.57.18.09.3.13.34.21.04.08.04.47-.15 1z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>WhatsApp</h4>
+                  <a href="https://wa.me/918668125458" target="_blank" rel="noopener noreferrer">+91 8668125458</a>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon icon-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Location</h4>
+                  <p>Coimbatore, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Navaneethan K. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/navaneethan-k-r24/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://leetcode.com/u/NAVANEETHAN_1027/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
